@@ -1,10 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reverseTestWord = word.split("").reverse().join("")
+  if (word === reverseTestWord){
+    return true
+  } else {
+    return false
+  }
 }
+
+console.log(isPalindrome(""))
+
 
 /* 
   Add your pseudocode here
-*/
+*/ //1. Check to see if the string is equal to the same string but written backwards.
+  // 2. If the strings are equal, return true.
+  // 3. Otherwise return false.
 
 /*
   Add written explanation of your solution here
